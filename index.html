@@ -112,12 +112,12 @@
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 88vh;
+    min-height: 60vh;
     border-bottom: 1px solid var(--rule);
   }
 
   .hero-left {
-    padding: 5rem 3rem 5rem 2.5rem;
+    padding: 3.5rem 3rem 3.5rem 2.5rem;
     border-right: 1px solid var(--rule);
     display: flex;
     flex-direction: column;
@@ -156,10 +156,10 @@
   }
 
   .hero-right {
-    padding: 5rem 2.5rem 5rem 3rem;
+    padding: 3.5rem 2.5rem 3.5rem 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     background: var(--gray-100);
   }
 
@@ -334,6 +334,9 @@
     border-bottom: 1px solid var(--rule);
     border-top: 1px solid var(--rule);
     background: var(--white);
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
 
   .pull-quote blockquote {
