@@ -419,12 +419,15 @@
   }
 
   .cred-title {
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--black);
+    color: var(--gray-400);
     margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--black);
   }
 
   .cred-list {
@@ -459,10 +462,18 @@
   .who-tag {
     font-size: 0.72rem;
     font-weight: 400;
-    color: var(--black);
-    border: 1px solid var(--rule);
+    color: var(--gray-600);
+    border: 1px solid var(--gray-200);
     padding: 0.3rem 0.65rem;
-    background: var(--gray-100);
+    background: var(--white);
+    transition: all 0.15s;
+    cursor: default;
+  }
+
+  .who-tag:hover {
+    background: var(--black);
+    color: var(--white);
+    border-color: var(--black);
   }
 
   /* CONTACT */
@@ -569,7 +580,7 @@
 
 <!-- TOP BAR -->
 <div class="topbar">
-  <span class="topbar-left">Contract Talent Operations &mdash; NYC</span>
+  <span class="topbar-left">Talent Operations</span>
   <div class="topbar-right">
     <a href="mailto:kelly@kellymilner.com">kelly@kellymilner.com</a>
     <a href="https://linkedin.com/in/kellymilner" target="_blank" rel="noopener">LinkedIn</a>
@@ -591,7 +602,7 @@
 <section class="hero">
   <div class="hero-left">
     <p class="hero-eyebrow">Talent Operations Specialist</p>
-    <h1 class="hero-headline">The recruiter who&rsquo;s been on every side of the hiring process.</h1>
+    <h1 class="hero-headline">The recruiter who&rsquo;s been on every side of the table.</h1>
     <p class="hero-footer">Having experience as a candidate, hiring manager, recruiter, and career coach, I understand the hiring process from multiple perspectives.</p>
   </div>
   <div class="hero-right">
@@ -782,7 +793,7 @@
     <h2 class="contact-headline">Let&rsquo;s work<br><strong>together.</strong></h2>
   </div>
   <div class="contact-right">
-    <p class="contact-sub">Contract &bull; Embedded &bull; Consulting</p>
+    <p class="contact-sub">Fractional &bull; Embedded &bull; Consulting</p>
     <a href="mailto:kelly@kellymilner.com" class="contact-link">kelly@kellymilner.com</a>
     <a href="https://linkedin.com/in/kellymilner" target="_blank" rel="noopener" class="contact-link">LinkedIn</a>
   </div>
