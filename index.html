@@ -112,7 +112,6 @@
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 60vh;
     border-bottom: 1px solid var(--rule);
   }
 
@@ -475,6 +474,33 @@
     cursor: default;
   }
 
+  /* TESTIMONIALS */
+  .testimonials {
+    padding: 5rem 2.5rem;
+    border-bottom: 1px solid var(--rule);
+    border-top: 1px solid var(--rule);
+  }
+
+  .testimonials-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--rule);
+  }
+
+  .testimonial {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--gray-600);
+    padding: 2rem 2.5rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .testimonial:last-child { border-bottom: none; }
+
   /* CONTACT */
   .contact {
     padding: 6rem 2.5rem;
@@ -608,23 +634,27 @@
     <div class="hero-stats">
       <div class="stat-row">
         <span class="stat-val">100<sup>%</sup></span>
-        <span class="stat-label">Offer acceptance rate across 12 offers in 10 months</span>
+        <span class="stat-label">Offer acceptance across 12 offers extended over 10 months</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-val">48<sup>%</sup></span>
+        <span class="stat-label">Of hires sourced from referrals</span>
       </div>
       <div class="stat-row">
         <span class="stat-val">45</span>
-        <span class="stat-label">Hires placed in 5 months</span>
-      </div>
-      <div class="stat-row">
-        <span class="stat-val">14</span>
-        <span class="stat-label">People hired in 7 weeks, including same-day closes</span>
+        <span class="stat-label">People hired in 5 months</span>
       </div>
       <div class="stat-row">
         <span class="stat-val">33<sup>%</sup></span>
         <span class="stat-label">Of hires sourced from my network and resume mining</span>
       </div>
       <div class="stat-row">
-        <span class="stat-val">48<sup>%</sup></span>
-        <span class="stat-label">Of hires sourced from referrals via redesigned program</span>
+        <span class="stat-val">19<sup>%</sup></span>
+        <span class="stat-label">Of hires from applicants</span>
+      </div>
+      <div class="stat-row">
+        <span class="stat-val">14</span>
+        <span class="stat-label">People hired in 7 weeks, including same-day hires</span>
       </div>
     </div>
   </div>
@@ -810,6 +840,17 @@
         <span class="who-tag">Mentor at ADPlist.org</span>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="section-label">What people say</div>
+  <div class="testimonials-grid">
+    <blockquote class="testimonial">&ldquo;She&rsquo;s strategic in recruiting the right talent while maintaining a cultural compass. Thoughtful, clear expectations throughout the process.&rdquo;</blockquote>
+    <blockquote class="testimonial">&ldquo;She&rsquo;s more of a matchmaker. She goes beyond finding the right candidate and ensures relationships are in place to make placements want to stay.&rdquo;</blockquote>
+    <blockquote class="testimonial">&ldquo;Smart, highly focused, keeps the best interests of the people she reports to top-of-mind. A people person at heart.&rdquo;</blockquote>
+    <blockquote class="testimonial">&ldquo;The woman you go to when you need something impossible done. She manages teams without micromanaging and inspires people to play to their strengths.&rdquo;</blockquote>
   </div>
 </section>
 
