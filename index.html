@@ -420,10 +420,10 @@
   /* ─── TAGS ─── */
   .tags-section {
     padding: 3rem var(--pad) 0;
-    
+    border-bottom: 1px solid var(--rule);
   }
 
-  .tag-col { padding-bottom: 1.5rem; }
+  .tag-col { padding-bottom: 3rem; border-bottom: 1px solid var(--rule); margin-bottom: 0; }
 
   .tag-group-label {
     font-family: 'DM Mono', monospace;
@@ -455,11 +455,12 @@
       gap: 4rem;
       padding: 4rem 2.5rem 0;
     }
+    .tag-col { border-bottom: none; }
   }
 
   /* ─── CREDENTIALS ─── */
   .credentials {
-    padding: 1.5rem var(--pad) 3rem;
+    padding: 3rem var(--pad) 3rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
