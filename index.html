@@ -156,8 +156,10 @@
 
   .stat-row {
     padding: 1rem 0;
-    
+    border-bottom: 1px solid var(--rule);
   }
+
+  .stat-row:last-child { border-bottom: none; }
 
   .stat-row:nth-child(odd) {
     padding-right: 1rem;
@@ -208,12 +210,8 @@
 
     .hero-right {
       padding-left: 3rem;
-      background: var(--gray-100);
-      padding-top: 0;
-      margin-top: -4rem;
       padding-top: 4rem;
       padding-bottom: 4rem;
-      margin-right: -2.5rem;
     }
 
     .hero-footer { margin-bottom: 0; }
@@ -420,10 +418,10 @@
   /* ─── TAGS ─── */
   .tags-section {
     padding: 3rem var(--pad) 0;
-    border-bottom: 1px solid var(--rule);
   }
 
-  .tag-col { padding-bottom: 3rem; border-bottom: 1px solid var(--rule); margin-bottom: 0; }
+  .tag-col { padding-bottom: 3rem; }
+  .tag-col:last-child { padding-bottom: 0; }
 
   .tag-group-label {
     font-family: 'DM Mono', monospace;
@@ -460,7 +458,7 @@
 
   /* ─── CREDENTIALS ─── */
   .credentials {
-    padding: 3rem var(--pad) 3rem;
+    padding: 3rem var(--pad);
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -523,8 +521,7 @@
 
   /* ─── CONTACT ─── */
   .contact {
-    padding: 3.5rem var(--pad);
-    border-top: 1px solid var(--rule);
+    padding: 3rem var(--pad);
     background: var(--gray-100);
   }
 
