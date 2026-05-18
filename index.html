@@ -46,7 +46,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 0.6rem 2.5rem;
-      border-bottom: 1px solid var(--rule);
+      
       font-family: 'DM Mono', monospace;
       font-size: 0.62rem;
       letter-spacing: 0.12em;
@@ -117,7 +117,7 @@
   /* ─── HERO ─── */
   .hero {
     padding: 2.5rem var(--pad);
-    border-bottom: 1px solid var(--rule);
+    
   }
 
   .hero-eyebrow {
@@ -151,12 +151,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0;
-    border-top: 1px solid var(--rule);
+    
   }
 
   .stat-row {
     padding: 1rem 0;
-    border-bottom: 1px solid var(--rule);
+    
   }
 
   .stat-row:nth-child(odd) {
@@ -228,7 +228,7 @@
       grid-template-columns: subgrid;
       grid-column: span 2;
       padding: 1rem 0;
-      border-bottom: 1px solid var(--rule);
+      
       align-items: baseline;
       gap: 1rem;
     }
@@ -240,7 +240,7 @@
       border-right: none;
     }
 
-    .stat-row:first-child { border-top: 1px solid var(--rule); }
+    .stat-row:first-child {  }
 
     .stat-val { display: block; font-size: 2.2rem; margin-bottom: 0; }
   }
@@ -248,7 +248,7 @@
   /* ─── TICKER ─── */
   .ticker {
     overflow: hidden;
-    border-bottom: 1px solid var(--rule);
+    
     padding: 0.85rem 0;
   }
 
@@ -300,7 +300,7 @@
   /* ─── EXPERTISE ─── */
   .expertise {
     padding: 3rem var(--pad);
-    border-bottom: 1px solid var(--rule);
+    
   }
 
   .expertise-grid {
@@ -312,7 +312,7 @@
 
   .exp-card {
     padding: 1.75rem;
-    border-bottom: 1px solid var(--rule);
+    
   }
 
   .exp-card:last-child { border-bottom: none; }
@@ -363,7 +363,7 @@
     .exp-card {
       width: 50%;
       border-right: 1px solid var(--rule);
-      border-bottom: 1px solid var(--rule);
+      
     }
     .exp-card:nth-child(even) { border-right: none; }
     .exp-card:nth-last-child(-n+2) { border-bottom: none; }
@@ -380,8 +380,8 @@
   /* ─── PULL QUOTE ─── */
   .pull-quote {
     padding: 3rem var(--pad);
-    border-bottom: 1px solid var(--rule);
-    border-top: 1px solid var(--rule);
+    
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -398,12 +398,18 @@
   .pull-quote blockquote {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: clamp(1.3rem, 4vw, 2rem);
-    font-style: italic;
-    font-weight: 700;
+    font-style: normal;
+    font-weight: 900;
     letter-spacing: -0.01em;
     line-height: 1.4;
     color: var(--black);
     max-width: 700px;
+  }
+
+  .pull-quote blockquote em {
+    font-style: italic;
+    font-weight: 900;
+    color: var(--red);
   }
 
   .pull-quote blockquote::before { content: '\201C'; color: var(--red); font-style: normal; margin-right: 0.05em; }
@@ -416,10 +422,10 @@
   /* ─── TAGS ─── */
   .tags-section {
     padding: 3rem var(--pad) 0;
-    border-bottom: 1px solid var(--rule);
+    
   }
 
-  .tag-col { padding-bottom: 3rem; }
+  .tag-col { padding-bottom: 1.5rem; }
 
   .tag-group-label {
     font-family: 'DM Mono', monospace;
@@ -429,7 +435,7 @@
     color: var(--gray-400);
     margin-bottom: 1.25rem;
     padding-bottom: 0.75rem;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--rule);
   }
 
   .tag-cloud { display: flex; flex-wrap: wrap; gap: 0.35rem; }
@@ -455,8 +461,7 @@
 
   /* ─── CREDENTIALS ─── */
   .credentials {
-    padding: 3rem var(--pad);
-    border-bottom: 1px solid var(--rule);
+    padding: 1.5rem var(--pad) 3rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -471,7 +476,7 @@
     color: var(--gray-400);
     margin-bottom: 1.25rem;
     padding-bottom: 0.75rem;
-    border-bottom: 1px solid var(--black);
+    border-bottom: 1px solid var(--rule);
   }
 
   .who-grid { display: flex; flex-wrap: wrap; gap: 0.35rem; }
@@ -488,8 +493,8 @@
   /* ─── TESTIMONIALS ─── */
   .testimonials {
     padding: 3rem var(--pad);
-    border-bottom: 1px solid var(--rule);
-    border-top: 1px solid var(--rule);
+    
+    
   }
 
   .testimonials-grid {
@@ -506,7 +511,7 @@
     line-height: 1.7;
     color: var(--gray-600);
     padding: 1.75rem;
-    border-bottom: 1px solid var(--rule);
+    
     text-align: center;
   }
 
@@ -520,7 +525,7 @@
   /* ─── CONTACT ─── */
   .contact {
     padding: 3.5rem var(--pad);
-    border-top: 2px solid var(--black);
+    border-top: 1px solid var(--rule);
     background: var(--gray-100);
   }
 
@@ -588,7 +593,7 @@
 
   /* ─── FOOTER ─── */
   footer {
-    border-top: 1px solid var(--rule);
+    
     padding: 1.25rem var(--pad);
     display: flex;
     flex-direction: column;
@@ -642,7 +647,7 @@
   <div class="hero-left">
     <p class="hero-eyebrow">Talent Operations Specialist</p>
     <h1 class="hero-headline">Hire faster without hiring full-time. Fractional recruiting built for how companies hire today.</h1>
-    <p class="hero-footer">No agency fees. No full-time overhead. Senior-level recruiting that plugs in, fills your pipeline, and scales back when the work is done.<br><br>Confidential searches. Crunchtime hiring. Executive search. Market research. Onboarding support. Pipeline building. Process design. Sourcing. Three-month gigs.</p>
+    <p class="hero-footer">No agency fees. No full-time overhead. Senior-level recruiting that plugs in, fills your pipeline, and scales back when the work is done.</p>
   </div>
   <div class="hero-right">
     <div class="hero-stats">
@@ -759,7 +764,7 @@
 <!-- PULL QUOTE -->
 <div class="pull-quote">
   <div class="pull-quote-rule"></div>
-  <blockquote>I am a designer who fell in love with building design teams.</blockquote>
+  <blockquote>I am a designer who fell in love with <em>building design teams.</em></blockquote>
   <div class="pull-quote-rule"></div>
 </div>
 
